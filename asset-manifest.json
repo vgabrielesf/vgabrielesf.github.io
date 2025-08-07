@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.41ba2848.css",
-    "main.js": "/static/js/main.db2e76b2.js",
-    "index.html": "/index.html",
-    "main.41ba2848.css.map": "/static/css/main.41ba2848.css.map",
-    "main.db2e76b2.js.map": "/static/js/main.db2e76b2.js.map"
+    "main.css": "/vgabrielesf.github.io/static/css/main.41ba2848.css",
+    "main.js": "/vgabrielesf.github.io/static/js/main.fc29daf9.js",
+    "index.html": "/vgabrielesf.github.io/index.html",
+    "main.41ba2848.css.map": "/vgabrielesf.github.io/static/css/main.41ba2848.css.map",
+    "main.fc29daf9.js.map": "/vgabrielesf.github.io/static/js/main.fc29daf9.js.map"
   },
   "entrypoints": [
     "static/css/main.41ba2848.css",
-    "static/js/main.db2e76b2.js"
+    "static/js/main.fc29daf9.js"
   ]
 }
