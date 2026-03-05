@@ -79,7 +79,7 @@ const ImageCarousel = ({ images, onImageClick }) => {
                                     />
                                 </div>
                                 <div className={img.isLarge ? "p-3" : "p-3"}>
-                                    <h3 className={img.isLarge ? "text-xl font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-pink-600 dark:group-hover:text-pink-400 transition-colors duration-300" : "text-sm font-semibold text-gray-900 dark:text-white mb-1 group-hover:text-pink-600 dark:group-hover:text-pink-400 transition-colors duration-300"} style={{ fontFamily: 'Poppins, sans-serif' }}>
+                                    <h3 className={img.isLarge ? "text-xl  text-gray-900 dark:text-white mb-2 group-hover:text-pink-600 dark:group-hover:text-pink-400 transition-colors duration-300" : "text-sm  text-gray-900 dark:text-white mb-1 group-hover:text-pink-600 dark:group-hover:text-pink-400 transition-colors duration-300"} style={{ fontFamily: 'Poppins, sans-serif' }}>
                                         {img.alt}
                                     </h3>
                                     <p className={img.isLarge ? "text-sm text-gray-600 dark:text-gray-400" : "text-xs text-gray-600 dark:text-gray-400"} style={{ fontFamily: 'Poppins, sans-serif' }}>

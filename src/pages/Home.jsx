@@ -748,7 +748,7 @@ const Home = () => {
                             <div className="flex flex-col items-center">
                                 <button 
                                     onClick={() => setSelectedCategory('aplicativos')}
-                                    className={`text-lg md:text-xl font-semibold transition-all duration-300 ${
+                                    className={`text-lg md:text-xl transition-all duration-300 ${
                                         selectedCategory === 'aplicativos'
                                             ? 'text-blue-600 dark:text-blue-400'
                                             : 'text-gray-900 dark:text-white hover:text-blue-500 dark:hover:text-blue-300'
@@ -758,13 +758,13 @@ const Home = () => {
                                     Aplicativos
                                 </button>
                                 {selectedCategory === 'aplicativos' && (
-                                    <div className="w-full h-1 bg-blue-600 dark:bg-blue-400 rounded mt-1"></div>
+                                    <div className="w-full h-0.5 bg-blue-600 dark:bg-blue-400 rounded mt-1"></div>
                                 )}
                             </div>
                             <div className="flex flex-col items-center">
                                 <button 
                                     onClick={() => setSelectedCategory('rendering')}
-                                    className={`text-lg md:text-xl font-semibold transition-all duration-300 ${
+                                    className={`text-lg md:text-xl transition-all duration-300 ${
                                         selectedCategory === 'rendering'
                                             ? 'text-blue-600 dark:text-blue-400'
                                             : 'text-gray-900 dark:text-white hover:text-blue-500 dark:hover:text-blue-300'
@@ -774,7 +774,7 @@ const Home = () => {
                                     Projetos de Engenharia e Design
                                 </button>
                                 {selectedCategory === 'rendering' && (
-                                    <div className="w-full h-1 bg-blue-600 dark:bg-blue-400 rounded mt-1"></div>
+                                    <div className="w-full h-0.5 bg-blue-600 dark:bg-blue-400 rounded mt-1"></div>
                                 )}
                             </div>
                         </div>
@@ -855,7 +855,7 @@ const Home = () => {
             </div>
             <div className="flex gap-2 mt-2">
                 <button
-                    className="px-4 py-2 rounded-xl bg-blue-600 text-white font-semibold shadow-xl transition-all duration-200 transform hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center gap-2"
+                    className="px-4 py-2 rounded-xl bg-blue-600 text-white shadow-xl transition-all duration-200 transform hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center gap-2"
                     onClick={prevModel}
                 >
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" /></svg>
@@ -863,7 +863,7 @@ const Home = () => {
                 </button>
                 <span className="text-base font-medium text-blue-700 dark:text-blue-300 mx-2" style={{fontFamily: 'Poppins, sans-serif'}}>{modelNames[modelIndex]}</span>
                 <button
-                    className="px-4 py-2 rounded-xl bg-blue-600 text-white font-semibold shadow-xl transition-all duration-200 transform hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center gap-2"
+                    className="px-4 py-2 rounded-xl bg-blue-600 text-white  shadow-xl transition-all duration-200 transform hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center gap-2"
                     onClick={nextModel}
                 >
                     Próximo
