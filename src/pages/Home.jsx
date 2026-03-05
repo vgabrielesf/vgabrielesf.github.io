@@ -217,6 +217,13 @@ const Home = () => {
     }, [modelUrl]);
 
     const [emailCopied, setEmailCopied] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth < 768);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     return (
         <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
@@ -655,7 +662,7 @@ const Home = () => {
                         {/* Certificates Grid */}
                         <div className="mx-4 md:mx-24">
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                                {window.innerWidth < 768
+                                {isMobile
                                     ? (
                                         // Exibe UM certificado por vez, mas garante que o Copilot está na rotação
                                         <div 
@@ -782,7 +789,7 @@ const Home = () => {
                                     <div className="flex items-start space-x-3">
                                     
                                         <div className="flex-1">
-                                            <p className="mt-1 text-sm text-blue-700 dark:text-blue-700" style={{fontFamily: 'Poppins, sans-serif'}}>
+                                            <p className="mt-1 text-sm text-blue-700 dark:text-blue-700" style={{fontFamily: 'Poppins, sans-serif', textAlign: 'justify'}}>
                                                 As imagens são carregadas conforme você navega para proporcionar a melhor qualidade visual. 
                                                 Aguarde alguns segundos para o carregamento completo.
                                             </p>
