@@ -361,7 +361,7 @@ const Home = () => {
                                                     : 'bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-600'
                                             }`}
                                         >
-                                            Nível Superior
+                                            Graduação
                                         </button>
                                         <button 
                                             onClick={() => setSelectedEducationType('tecnico')}
